@@ -1,0 +1,67 @@
+/* Generalno stilizovanje za linkove i dugme */
+
+.nav-button {
+    background-color: transparent;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem; /* Usklađeno sa linkovima */
+    cursor: pointer;
+    color: white; /* Postavlja boju teksta kao linkove */
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.nav-button:hover {
+    background-color: #0056b3; /* Tamnija nijansa za hover efekt */
+    color: #fff; /* Uveravanje da tekst ostaje beo */
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center; /* Uveravamo se da su svi stavke poravnate vertikalno */
+}
+
+.nav-links a,
+.nav-button {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 16px;
+    display: inline-flex; /* Koristimo inline-flex da bi se obezbedilo isto poravnavanje */
+    align-items: center; /* Vertikalno poravnanje */
+    justify-content: center; /* Horizontalno centriranje */
+    line-height: 1; /* Osiguravamo da svi elementi imaju isti visinski razmak */
+}
+
+.nav-links a:hover,
+.nav-button:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 1rem;
+}
+
+.title {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.title-link {
+    color: white;
+    text-decoration: none;
+}
+
+.title-link:hover {
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,128 @@
+.profile-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-header h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.profile-header p {
+    color: #555;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.profile-follow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.profile-follow div {
+    width: 48%;
+}
+
+.profile-follow h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.profile-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.profile-link a:hover {
+    text-decoration: underline;
+}
+
+.profile-posts {
+    margin-top: 20px;
+}
+
+.profile-posts h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.profile-post-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-post-item p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.profile-post-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.details-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.details-link:hover {
+    text-decoration: underline;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centriraj dugmadi u kontejneru */
+    gap: 10px; /* Razmak između dugmadi */
+    margin-top: 20px; /* Opcionalno, dodaj razmak od gornjeg dela */
+}
+
+.edit-profile-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto; /* Osiguraj da dugmadi imaju svoju prirodnu širinu */
+}
+
+.edit-profile-button:hover {
+    background-color: #0056b3;
+}
+
+.follow-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.follow-button:hover {
+    background-color: #0056b3;
+}

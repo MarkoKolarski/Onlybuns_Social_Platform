@@ -1,0 +1,254 @@
+.post-list {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f4f7fc;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.post-list h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.post-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    font-family: 'Arial', sans-serif;
+}
+
+.post-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.post-item h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.post-item h3:hover {
+    color: #0056b3;
+}
+
+.post-item p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.post-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    height: 300px;
+}
+
+.post-item .likes {
+    font-size: 1.2rem;
+    color: #888;
+    margin-bottom: 12px;
+}
+
+.post-item .like-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.post-item .like-button:hover {
+    background-color: #0056b3;
+}
+
+.comment-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.comment-section textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    resize: none;
+    min-height: 100px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.comment-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+}
+
+.comment-button:hover {
+    background-color: #218838;
+}
+
+.comments-container {
+    position: relative;
+}
+
+.comments {
+    max-height: none; /* Početno svi komentari su prikazani */
+    overflow-y: hidden;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    padding: 18px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    border-left: 5px solid #007bff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.comment:hover {
+    background-color: #eef2f7;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 12px;
+}
+
+.comment-number {
+    font-weight: bold;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.username-link {
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.username-link:hover {
+    color: #0056b3;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+.comment-text {
+    margin-top: 12px;
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.comment-date {
+    font-size: 0.9rem;
+    color: #888;
+    margin-left: 10px;
+}
+
+.load-more-comments {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.load-more-comments:hover {
+    background-color: #45a049;
+}
+
+.create-post-form {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.create-post-form textarea {
+    font-size: 1.2rem;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    resize: none;
+    min-height: 150px;
+    font-family: 'Arial', sans-serif;
+}
+
+.create-post-form input[type="file"] {
+    margin-bottom: 20px;
+}
+
+.map-container {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.create-post-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Dodaj margine da bude ispod mape */
+}
+
+.create-post-form button:hover {
+    background-color: #0056b3;
+}
